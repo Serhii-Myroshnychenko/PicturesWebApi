@@ -1,0 +1,109 @@
+{
+	"info": {
+		"_postman_id": "5c400f21-ba3a-4c1d-8bae-63dd0a9a2c50",
+		"name": "PicturesWebApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26806733"
+	},
+	"item": [
+		{
+			"name": "api/images/upload-by-url",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "Url",
+							"value": "https://cdn.pixabay.com/photo/2014/02/27/16/10/flowers-276014_1280.jpg",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://localhost:7122/api/images/upload-by-url",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7122",
+					"path": [
+						"api",
+						"images",
+						"upload-by-url"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/images/remove/{id}",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7122/api/images/remove/bf97ecc2-1678-4d38-9e53-589ca3412c8b",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7122",
+					"path": [
+						"api",
+						"images",
+						"remove",
+						"bf97ecc2-1678-4d38-9e53-589ca3412c8b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/images/get-url/{id}",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7122/api/images/get-url/db762b4e-3272-4598-9a46-89284b724ad4",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7122",
+					"path": [
+						"api",
+						"images",
+						"get-url",
+						"db762b4e-3272-4598-9a46-89284b724ad4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/images/get-url/{id}/size/{size}",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7122/api/images/get-url/db762b4e-3272-4598-9a46-89284b724ad4/size/120x300",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7122",
+					"path": [
+						"api",
+						"images",
+						"get-url",
+						"db762b4e-3272-4598-9a46-89284b724ad4",
+						"size",
+						"120x300"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
